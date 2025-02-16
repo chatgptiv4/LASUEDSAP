@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3141371487955487"><meta name="google-adsense-account" content="ca-pub-3141371487955487">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skills - Web Development</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Import Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo1.jpeg">
+</head>
+<style>
+/* Apply custom font: Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f5f5f5; */
+    background: url('bg.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for skills */
+.skills-category {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+/* Colorful, professional skill boxes */
+.skill {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+}
+
+.skill:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Add gradients to skill boxes */
+.colorful-box {
+    background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
+}
+
+/* Specific gradients for each skill */
+.colorful-box:nth-child(2) { /* CSS */
+    background: linear-gradient(135deg, #F2994A 0%, #F2C94C 100%);
+}
+
+.colorful-box:nth-child(3) { /* JavaScript */
+    background: linear-gradient(135deg, #F2C94C 0%, #F2994A 100%);
+}
+
+.colorful-box:nth-child(4) { /* React.js */
+    background: linear-gradient(135deg, #9B51E0 0%, #BB6BD9 100%);
+}
+
+.colorful-box:nth-child(5) { /* Node.js */
+    background: linear-gradient(135deg, #27AE60 0%, #219653 100%);
+}
+
+.colorful-box:nth-child(6) { /* Express.js */
+    background: linear-gradient(135deg, #333333 0%, #4F4F4F 100%);
+}
+
+.colorful-box:nth-child(7) { /* MongoDB */
+    background: linear-gradient(135deg, #43A047 0%, #388E3C 100%);
+}
+
+.colorful-box:nth-child(8) { /* Git */
+    background: linear-gradient(135deg, #D32F2F 0%, #E57373 100%);
+}
+
+.skill img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.skill h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.skill a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.skill a:hover {
+    color: #ddd;
+}
+/* Footer Enhancements */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+  
+}
+
+
+</style>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Web Development Skills</h2>
+
+        <!-- Frontend Development Skills -->
+        <div class="skills-category">
+            <h3>Frontend Development</h3>
+            <div class="skills-grid">
+                <!-- HTML Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon">   </a>
+                    <h4>HTML</h4>
+                    <p>The backbone of any web page, responsible for structuring content.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Learn more on MDN</a>
+                </div>
+                
+                <!-- CSS Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon"> </a>
+                    <h4>CSS</h4>
+                    <p>Controls the visual appearance of websites with styles like colors and layouts.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Learn more on MDN</a>
+                </div>
+
+                <!-- JavaScript Skill -->
+                <div class="skill colorful-box">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon"> </a>
+                    <h4>JavaScript</h4>
+                    <p>Enables interactivity on websites, powering dynamic content and behavior.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Learn more on MDN</a>
+                </div>
+
+                <!-- React.js Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React Icon"> </a>
+                    <h4>React.js</h4>
+                    <p>A popular JavaScript library for building user interfaces.</p>
+                    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">Learn more on React Docs</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Development Skills -->
+        <div class="skills-category">
+            <h3>Backend Development</h3>
+            <div class="skills-grid">
+                <!-- Node.js Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://nodejs.org/en/docs/" target="_blank">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js Icon"> </a>
+                    <h4>Node.js</h4>
+                    <p>A runtime environment that lets you run JavaScript on the server.</p>
+                    <a href="https://nodejs.org/en/docs/" target="_blank">Learn more on Node.js Docs</a>
+                </div>
+
+                <!-- Express.js Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://expressjs.com/en/starter/installing.html" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919841.png" alt="Express.js Icon"> </a>
+                    <h4>Express.js</h4>
+                    <p>A fast, minimalist web framework for Node.js to create server-side applications.</p>
+                    <a href="https://expressjs.com/en/starter/installing.html" target="_blank">Learn more on Express Docs</a>
+                </div>
+
+                <!-- MongoDB Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://docs.mongodb.com/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MongoDB Icon"> </a>
+                    <h4>MongoDB</h4>
+                    <p>A NoSQL database for storing data in flexible, JSON-like documents.</p>
+                    <a href="https://docs.mongodb.com/" target="_blank">Learn more on MongoDB Docs</a>
+                </div>
+
+                <!-- Git Skill -->
+                <div class="skill colorful-box">
+                    <a href="https://git-scm.com/doc" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Git Icon"> </a>
+                    <h4>Git</h4>
+                    <p>A version control system to track changes in code and collaborate with others.</p>
+                    <a href="https://git-scm.com/doc" target="_blank">Learn more on Git Docs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Skill Acquisition Program. All rights reserved.</p>
+    </footer>
+</body>
+</html>

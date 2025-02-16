@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3141371487955487"><meta name="google-adsense-account" content="ca-pub-3141371487955487">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog - Web Development</title>
+    <link rel="stylesheet" href="stylecss">
+    <!-- Import Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/104/104071.png">
+</head>
+
+<style>
+/* Apply custom font: Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #282c34;
+}
+
+/* Blog Grid Layout */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+/* Blog Post Styling */
+.blog-post {
+    background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   
+
+ 
+}
+
+.blog-post h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.blog-post a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: #ddd;
+}
+
+/* Colorful gradients for each blog post */
+.blog-post:nth-child(2) {
+    background: linear-gradient(135deg, #F2994A 0%, #F2C94C 100%);
+}
+
+.blog-post:nth-child(3) {
+    background: linear-gradient(135deg, #F2C94C 0%, #F2994A 100%);
+}
+
+.blog-post:nth-child(4) {
+    background: linear-gradient(135deg, #9B51E0 0%, #BB6BD9 100%);
+}
+
+.blog-post:nth-child(5) {
+    background: linear-gradient(135deg, #27AE60 0%, #219653 100%);
+}
+
+.blog-post:nth-child(6) {
+    background: linear-gradient(135deg, #333333 0%, #4F4F4F 100%);
+}
+
+.blog-post:nth-child(7) {
+    background: linear-gradient(135deg, #43A047 0%, #388E3C 100%);
+}
+
+.blog-post:nth-child(8) {
+    background: linear-gradient(135deg, #D32F2F 0%, #E57373 100%);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .blog-post h3 {
+        font-size: 1.4rem;
+    }
+}
+/* Footer Enhancements */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.9rem 0;
+    position: relative;
+  
+}
+
+
+
+
+
+</style>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Web Development Articles</h2>
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-post colorful-box">
+                <img src="css grid.webp"alt="Understanding CSS Grid">
+                <h3>Understanding CSS Grid: A Comprehensive Guide</h3>
+                <p>Explore the fundamentals of CSS Grid and how it revolutionizes web layout design.</p>
+                <a href="https://example.com/css-grid-guide" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post colorful-box">
+                <img src="2.webp" alt="Mastering JavaScript Asynchronous Programming">
+                <h3>Mastering JavaScript Asynchronous Programming</h3>
+                <p>Dive into asynchronous programming in JavaScript and enhance your coding skills.</p>
+                <a href="https://example.com/js-asynchronous-programming" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post colorful-box">
+                <img src="3.webp" alt="Top 10 Web Development Trends in 2025">
+                <h3>Top 10 Web Development Trends in 2025</h3>
+                <p>Stay ahead of the curve with the latest trends shaping the web development industry.</p>
+                <a href="https://example.com/web-dev-trends-2025" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="blog-post colorful-box">
+                <img src="4.webp" alt="Building Responsive Websites with Flexbox">
+                <h3>Building Responsive Websites with Flexbox</h3>
+                <p>Learn how to create flexible and responsive layouts using CSS Flexbox.</p>
+                <a href="https://example.com/flexbox-responsive-design" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="blog-post colorful-box">
+                <img src="5.webp" alt="Introduction to Progressive Web Apps (PWAs)">
+                <h3>Introduction to Progressive Web Apps (PWAs)</h3>
+                <p>Discover the benefits and implementation of Progressive Web Apps in modern web development.</p>
+                <a href="https://example.com/pwa-introduction" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 6 -->
+            <div class="blog-post colorful-box">
+                <img src="6.jpg" alt="Exploring the JAMstack Architecture">
+                <h3>Exploring the JAMstack Architecture</h3>
+                <p>Understand the JAMstack architecture and how it enhances web performance and security.</p>
+                <a href="https://example.com/jamstack-architecture" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 7 -->
+            <div class="blog-post colorful-box">
+                <img src="7.jpg" alt="Optimizing Web Performance with Lazy Loading">
+                <h3>Optimizing Web Performance with Lazy Loading</h3>
+                <p>Learn techniques to improve web performance by implementing lazy loading strategies.</p>
+                <a href="https://example.com/lazy-loading-performance" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 8 -->
+            <div class="blog-post colorful-box">
+                <img src="8.jpg" alt="Understanding Web Accessibility Standards">
+                <h3>Understanding Web Accessibility Standards</h3>
+                <p>Ensure your websites are accessible to all users by adhering to web accessibility standards.</p>
+                <a href="https://example.com/web-accessibility-standards" target="_blank">Read more</a>
+            </div>
+
+    
+            <div class="blog-post colorful-box">
+                <img src="4.webp" alt="Building Responsive Websites with Flexbox">
+                <h3>Building Responsive Websites with Flexbox</h3>
+                <p>Learn how to create flexible and responsive layouts using CSS Flexbox.</p>
+                <a href="https://example.com/flexbox-responsive-design" target="_blank">Read more</a>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="blog-post colorful-box">
+                <img src="5.webp" alt="Introduction to Progressive Web Apps (PWAs)">
+                <h3>Introduction to Progressive Web Apps (PWAs)</h3>
+                <p>Discover the benefits and implementation of Progressive Web Apps in modern web development.</p>
+                <a href="https://example.com/pwa-introduction" target="_blank">Read more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Skill Acquisition Program. All rights reserved.</p>
+    </footer>
+</body>
+</html>
